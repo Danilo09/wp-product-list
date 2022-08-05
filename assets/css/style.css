@@ -1,0 +1,44 @@
+header {
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+.logo {
+    height: 45px;
+    width: 45px;
+}
+
+
+.cards {
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cards>div {
+    align-items: center;
+}
+
+.cards>div .title {
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+
+
+div#\36 aus49\  {
+    background-color: #ffdf00;
+}
+
+div#\36 aus49\ >div .image .logo {
+    background-image: url('../img/lotto-6-aus-49.svg');
+}
+
+.eurojackpot>div .image .logo {
+    background-image: url('../img/eurojackpot.svg');
+}
+
+.eurojackpot.cards {
+    background-color: #f5c800;
+}
