@@ -3,8 +3,6 @@ header {
     border-bottom: 1px solid #ccc;
 }
 
-
-
 .logo {
     height: 45px;
     width: 45px;
@@ -12,7 +10,6 @@ header {
 
 
 .cards {
-    margin: 5px;
     border-radius: 10px;
     padding: 10px;
 }
@@ -26,11 +23,6 @@ header {
     text-transform: uppercase;
 }
 
-
-div#\36 aus49\  {
-    background-color: #ffdf00;
-}
-
 div#\36 aus49\ >div .image .logo {
     background-image: url('../img/lotto-6-aus-49.svg');
 }
@@ -39,6 +31,31 @@ div#\36 aus49\ >div .image .logo {
     background-image: url('../img/eurojackpot.svg');
 }
 
+.freiheitplus>div .image .logo {
+    background-image: url('../img/freiheitplus.svg');
+}
+
+.traumhauslotterie>div .image .logo {
+    background-image: url('../img/traumhauslotterie.svg');
+}
+
+div#\36 aus49\  {
+    background-color: #ffdf00;
+}
+
 .eurojackpot.cards {
     background-color: #f5c800;
+}
+
+.freiheitplus.cards {
+    background-color: #c6071c;
+}
+
+.traumhauslotterie.cards {
+    background-color: #961c82;
+}
+
+p.description {
+    padding: 20px 2px;
+    font-size: 20px;
 }

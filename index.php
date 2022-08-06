@@ -5,9 +5,9 @@
     <div class="container">
         <div class="row">
             <?php
-                $arr = array("6aus49", "eurojackpot", "spiel77", "freiheitplus");
+                $arr = array("6aus49", "eurojackpot", "freiheitplus", "traumhauslotterie");
                 foreach ($arr as $apikey) {
-                    $response = wp_remote_get( 'https://api.lotto24.de/drawinfo/'. $apikey .'/jackpot' );
+                    $response = wp_remote_get( 'https://api.lotto24.de/drawinfo/'. $apikey );
                     $body = wp_remote_retrieve_body( $response );
                     $data = json_decode($body);
                     echo '<div class="'.$apikey.' col-sm-12 col-md-6 col-lg-4 cards" id="'.$apikey.' "> 
@@ -21,13 +21,17 @@
                                 </div>
                                 <div>
                                     <p class="description">
-                                        '. $data->jackpots->WC_1.' </br>
-                                        '. $data->jackpots->WC_2.' </br>
+                                        '. $data->currency.' </br>
+                                        '. $data->quotas->WC_1.' </br>
                                     </p>
                                 </div>
                         </div>';
                 };
             ?>
+			 <?php 
+             
+             ?>
+
         </div>
     </div>
 </section>
