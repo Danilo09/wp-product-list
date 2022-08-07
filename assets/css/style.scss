@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,800&display=swap');
+
+$white : #FFF;
+
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -62,9 +65,9 @@ header {
 }
 
 .cards {
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 10px;
-    border: 5px solid #FFF;
+    border: 5px solid $white;
     background-color: #f9f6f1;
 
     >div {
@@ -75,7 +78,7 @@ header {
 .cards {
     .title {
         margin-left: 15px;
-        text-transform: uppercase;
+        font-weight: 800;
     }
 }
 
@@ -93,17 +96,25 @@ div#\36 aus49\  {
     .logo {
         background-image: url('../img/eurojackpot.svg');
     }
+
+    .title {
+        text-transform: uppercase;
+    }
 }
 
 .freiheitplus {
     background-color: #c6071c;
 
     .title {
-        color: #FFF;
+        color: $white;
     }
 
     .logo {
         background-image: url('../img/freiheitplus.svg');
+    }
+
+    .description {
+        color: $white;
     }
 }
 
@@ -111,17 +122,23 @@ div#\36 aus49\  {
     background-color: #961c82;
 
     .title {
-        color: #FFF;
+        color: $white;
+        text-transform: uppercase;
     }
 
     .logo {
         background-image: url('../img/traumhauslotterie.svg');
+    }
+
+    .description {
+        color: $white;
     }
 }
 
 p.description {
     padding: 20px 5px;
     font-size: 20px;
+    font-weight: 800;
 }
 
 footer {
@@ -132,6 +149,44 @@ footer {
     justify-content: center;
 }
 
+
+// css form
+
+.alert-success {
+    display: block;
+    width: 100%;
+}
+
+.form-add-product {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eae1c8;
+    padding: 20px;
+    margin: 0px 0px 30px;
+    border-radius: 10px;
+
+    label {
+        margin-bottom: 0px;
+    }
+
+    &__key {
+        margin-right: 15px;
+    }
+
+    .submitProduct {
+        background-color: #9b0000;
+        border: 1px solid #9b0000;
+        height: 40px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: white;
+        margin-left: 10px;
+        padding: 0px 20px;
+    }
+}
 
 
 @media screen and (min-width: 992px) {
