@@ -32,32 +32,62 @@ function add_file_types_to_uploads($file_types){
     return $file_types;
 }
 
+
+// Creating POST to add products on database
+
 add_filter('upload_mimes', 'add_file_types_to_uploads');
 
-// function get_send_data() {
-//     $args = array(
-//         'post_type' => 'post',
-//         'posts_per_page' => 10,
-//     );
-    
-//     $query = new WP_Query($args);
+add_action( 'admin_post_nopriv_add_product', 'process_add_product' );
 
-//     $datasend = [];
-    
-//     if($query -> have_posts()) {
-//         while ( $query -> have_posts()) {
-//             $query->the_post();
-    
-//             $array = [
-//                 'apiKey' => get_the_title(),
-//                 'displayName' => get_the_content(),
-//                 'productId' => 1
-//             ];
-    
-//             array_push($datasend, $array);
-            
-//         }
-//     }
-    
-//     var_dump(json_encode($datasend));
-// }
+add_action( 'admin_post_add_product', 'process_add_product' );
+
+function process_add_product(){
+
+    GLOBAL $wpdb;
+
+    $params = $_POST;
+
+    /*create table if not exists*/
+
+    $table_name = $wpdb->prefix.'custom_add_product';
+
+    $query = $wpdb->prepare( 'SHOW TABLES LIKE %s', $wpdb->esc_like( $table_name ) );
+
+    if ( ! $wpdb->get_var( $query ) == $table_name ) {
+
+        $sql = "CREATE TABLE {$table_name} (
+        productId INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+        displayName VARCHAR(255) NOT NULL,
+        apiKey VARCHAR(255) NOT NULL,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    )";
+
+    if($wpdb->query($sql)){
+        submitsForm($table_name,$params);
+    }
+
+
+}else{
+    submitsForm($table_name,$params);
+}
+
+/*create table if not exists*/
+
+die;
+
+}
+
+function submitsForm($table_name, $params){
+
+    GLOBAL $wpdb;
+
+    $curTime = date('Y-m-d H:i:s');
+
+    $query = "INSERT INTO {$table_name}(displayName, apiKey,created_at) VALUES('{$params['displayName']}','{$params['apiKey']}','{$curTime}')"; 
+
+    if($wpdb->query($query)){
+        wp_redirect($params['base_page'].'?success=1'); 
+    }else{
+        wp_redirect($params['base_page'].'?error=1'); 
+    }
+}

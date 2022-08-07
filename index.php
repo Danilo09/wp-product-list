@@ -16,7 +16,7 @@
                                     <div class="image d-inline-block">
                                         <div class="logo"></div>
                                     </div>
-                                    <div class="title d-inline-block">
+                                    <div class="title d-inline-block" name="'.$apikey.'">
                                         '. $data->lottery .'
                                     </div>
                                 </div>
@@ -67,35 +67,6 @@
     </div>
 </section>
            
-
-			<?php 
-                $productName = sanitize_text_field( $_POST["rt-productName"] );
-                $productDescription = sanitize_text_field( $_POST["rt-productDescription"] );
-
-                if ( isset( $_POST['rt-submitted'] ) ) {  
-                    $response = wp_remote_post( $url, array(
-                        'method' => 'POST',
-                        'timeout' => 45,
-                        'redirection' => 5,
-                        'httpversion' => '1.0',
-                        'blocking' => true,
-                        'headers' => array(),
-                        'body' => array( 'productName' => $productName, 'productDescription' => $productDescription ),
-                        'cookies' => array()
-                        )
-                    );
-                    
-                    if ( is_wp_error( $response ) ) {
-                       $error_message = $response->get_error_message();
-                       echo "Something went wrong: $error_message";
-                    } else {
-                       echo 'Response:<pre>';
-                       print_r( $response );
-                       echo '</pre>';
-                    }
-                }
-                
-            ?>
-
+<?php include 'page-add-product.php'; ?>
 
 <?php get_footer(); ?>
