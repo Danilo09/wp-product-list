@@ -12,7 +12,6 @@
 
 function lotto_scripts() {
     wp_enqueue_style( 'lotto_style',  get_template_directory_uri() .'/assets/css/style.css', array(), null, 'all' );
-
 }
 
 add_action('wp_enqueue_scripts', 'lotto_scripts');
@@ -21,6 +20,19 @@ add_action('wp_enqueue_scripts', 'lotto_scripts');
 add_filter( 'show_admin_bar', '__return_false' );
 
 
+// Enable thumbnail in posts 
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 45, 45, true ); // miniaturas normais para a homepage
+
+// Enable SVG in posts
+function add_file_types_to_uploads($file_types){
+    $new_filetypes = array();
+    $new_filetypes['svg'] = 'image/svg+xml';
+    $file_types = array_merge($file_types, $new_filetypes );
+    return $file_types;
+}
+
+add_filter('upload_mimes', 'add_file_types_to_uploads');
 
 // function get_send_data() {
 //     $args = array(
