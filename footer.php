@@ -1,5 +1,5 @@
 <footer>
-    
+    <span class="text-footer">Spiel mit Verantwortung.</span>
 </footer>
 <?php wp_footer(); ?>
 

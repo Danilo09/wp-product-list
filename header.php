@@ -10,9 +10,14 @@
     </head>
     <body>
     <header>
-        <section>
-            <div>
-                
+        <section class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="content-logo">
+                        <div class="logo-site"></div>
+                        <span>So spielt man Lotto heute!</span>
+                    </div>
+                </div>
             </div>        
         </section>
     </header>
