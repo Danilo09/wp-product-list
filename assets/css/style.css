@@ -131,7 +131,7 @@ footer {
 }
 
 .form-add-product {
-  display: flex;
+  display: block;
   align-content: space-between;
   align-items: center;
   justify-content: center;
@@ -146,6 +146,12 @@ footer {
 .form-add-product__key {
   margin-right: 15px;
 }
+.form-add-product__name {
+  margin-top: 10px;
+}
+.form-add-product input {
+  width: 100%;
+}
 .form-add-product .submitProduct {
   background-color: #9b0000;
   border: 1px solid #9b0000;
@@ -158,6 +164,14 @@ footer {
   padding: 0px 20px;
 }
 
+@media screen and (min-width: 600px) {
+  .form-add-product {
+    display: flex;
+  }
+  .form-add-product__name {
+    margin-top: 0;
+  }
+}
 @media screen and (min-width: 992px) {
   header {
     height: 70px;

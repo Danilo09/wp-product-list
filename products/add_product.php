@@ -1,7 +1,7 @@
 <section>
 <h2 class="title-block">ADD MORE PRODUCTS? </h2>
     <div class="container">
-        <div class="row">
+        <div class="row mx-0 px-0">
             <?php if(isset($_GET['success'])): ?>
                 <div class="alert alert-success">
                     <h5>Congrats! Your Product Submitted Successfully.</h5>
@@ -19,14 +19,14 @@
                     <div class="form-add-product__key">
                         <label>
                             API key
-                            <input type="text" name="apiKey" required="">
+                            <input type="text" name="apiKey" id=apiKey" required="">
                         </label>
                     </div>
                     
                     <div class="form-add-product__name">
                         <label>
                             Display Name
-                            <input type="text" name="displayName" required="">
+                            <input type="text" name="displayName" id="displayName" required="">
                         </label>
                     </div>
 
@@ -34,7 +34,7 @@
 
                     <input type="hidden" name="base_page" value="<?php echo home_url( $wp->request ); ?>">
 
-                    <div>
+                    <div class="mt-3">
                         <button type="submit" name="submitProduct" class="submitProduct">
                             Submit
                         </button>

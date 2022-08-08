@@ -158,7 +158,7 @@ footer {
 }
 
 .form-add-product {
-    display: flex;
+    display: block;
     align-content: space-between;
     align-items: center;
     justify-content: center;
@@ -175,6 +175,14 @@ footer {
         margin-right: 15px;
     }
 
+    &__name {
+        margin-top: 10px;
+    }
+
+    input {
+        width: 100%;
+    }
+
     .submitProduct {
         background-color: #9b0000;
         border: 1px solid #9b0000;
@@ -187,6 +195,17 @@ footer {
         padding: 0px 20px;
     }
 }
+
+@media screen and (min-width: 600px) {
+    .form-add-product {
+        display: flex;
+
+        &__name {
+            margin-top: 0;
+        }
+    }
+}
+
 
 
 @media screen and (min-width: 992px) {
