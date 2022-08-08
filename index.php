@@ -10,5 +10,4 @@
            
 <?php include 'products/add_product.php'; ?>
 
-
 <?php get_footer(); ?>

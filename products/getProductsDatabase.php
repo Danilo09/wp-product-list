@@ -1,6 +1,7 @@
 <?php 
     $sPath = realpath( __DIR__ . '/../connection.php');
     if($sPath) { require_once $sPath; }
+    
     $sql="SELECT * FROM wp_custom_add_product";
     $result=mysqli_query($conn, $sql);
 ?>

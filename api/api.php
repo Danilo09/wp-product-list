@@ -1,5 +1,6 @@
 <?php 
-    require_once __DIR__ . '/config.php';
+    $sPath = realpath( __DIR__ . '/../config.php');
+    if($sPath) { require_once $sPath; }
 
     class API {
         function Select () {
