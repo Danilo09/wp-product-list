@@ -2,12 +2,12 @@
     get_header();
 ?>
 
-<?php include 'page-getProductsUrl'; ?>
+<?php include 'getProductsUrl'; ?>
 
-<?php include 'page-post-products.php'; ?>
+<?php include 'post-products.php'; ?>
 
-<?php include 'page-getProductsDatabase.php' ?>
+<?php include 'getProductsDatabase.php' ?>
            
-<?php include 'page-add-product.php'; ?>
+<?php include 'add_product.php'; ?>
 
 <?php get_footer(); ?>

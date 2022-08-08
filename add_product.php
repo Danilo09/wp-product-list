@@ -40,7 +40,6 @@
                         </button>
                     </div>
                 </div>
-                
 
             </form>
             <!-- new registeration -->
