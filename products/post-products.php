@@ -24,6 +24,9 @@
                         </p>
                     </div>
                 </div>                            
+                <div>
+                    some informations
+                </di>
                 
         <?php     
                 endwhile;
