@@ -38,6 +38,3 @@ In the home page, ww'll have 4 sections of products:
   <img width="1095" alt="Screen Shot 2022-08-09 at 14 02 05" src="https://user-images.githubusercontent.com/11212886/183642234-8606072e-aa24-46ab-81d2-9c2bf8ac42e2.png">
 
 
-Enjoy the project! :D
-
-
