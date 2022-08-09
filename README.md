@@ -30,7 +30,7 @@ In the home page, ww'll have 4 sections of products:
   - First we need to download <a href="https://wordpress.org/download/" target="__blank">wordpress</a>.
   - After download, put this folder on htdocs (if you are using XAMPP) or www (if you are using WAMPP).
   - Duplicate wp-config-sample.php, rename to wp-config.php and put the informations about your application.
-  - Then you can go to wp-content/themes and past this archive. [*note] For the Front-end Aplly, you'll have to change the theme folder name to "lotto".
+  - Then you can go to wp-content/themes and past this archive. [*note] To aplly the front-end, you'll have to change the folder name to "lotto".
   - [Tip 2] Past the folders [uploads] and [plugins] in wp-content/. So the folders composing this tree is [themes], [plugins], [uploads].
 
 ## Tips
