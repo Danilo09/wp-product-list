@@ -20,7 +20,7 @@
                                 <div>
                                     <p class="description">
                                         '. $data->currency.' </br>
-                                        '. $data->quotas->WC_1.' </br>
+                                        '. $data->drawIdentifier.' </br>
                                     </p>
                                 </div>
                         </div>';

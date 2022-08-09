@@ -1,9 +1,9 @@
-<section>
+<section id="block-add">
 <h2 class="title-block">ADD MORE PRODUCTS? </h2>
     <div class="container">
         <div class="row mx-0 px-0">
             <?php if(isset($_GET['success'])): ?>
-                <div class="alert alert-success">
+                <div class="alert alert-success" id="alert-add-product">
                     <h5>Congrats! Your Product Submitted Successfully.</h5>
                 </div>
             <?php endif; ?>
@@ -14,7 +14,7 @@
                 </div>
             <?php endif; ?>
 
-            <form name="add_product" method="POST" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" enctype="multipart/form-data" autocomplete="off" accept-charset="utf-8">
+            <form name="add_product" method="POST" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>#block-add" enctype="multipart/form-data" autocomplete="off" accept-charset="utf-8">
                 <div class="form-add-product">
                     <div class="form-add-product__key">
                         <label>

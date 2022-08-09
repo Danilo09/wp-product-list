@@ -9,7 +9,12 @@ function changeNameCards() {
 
 changeNameCards();
 
+setTimeout(() => {
+    const alert = document.getElementById('alert-add-product');
 
+    // 👇️ removes element from DOM
+    alert.style.display = 'none';
 
-// Mytxt = document.createTextNode("New text");
-// Myspan.appendChild(Mytxt);
+    // 👇️ hides element (still takes up space on page)
+    // box.style.visibility = 'hidden';
+}, 5000);
