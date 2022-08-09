@@ -12,19 +12,6 @@ In the home page, ww'll have 4 sections of products:
   3.  Products coming from Database.
   4.  Add products to Database.
 
-# How to Create a POST with wordpress.
-
-  - Add Name and information about the product. [image 1]
-  - Add image to product. [image 2]
-  
-  <img width="1440" alt="Create post product" src="https://user-images.githubusercontent.com/11212886/183641064-633760f2-6ba2-4f62-a5f7-dc438a202c03.png">
-  
-
-[#Note] - To add images SVG, first we need to put in the first line this code: <svg xmlns="http://www.w3.org/2000/svg" id="lotto24" viewBox="0 0 64 64">
-  
-  <img width="1095" alt="Screen Shot 2022-08-09 at 14 02 05" src="https://user-images.githubusercontent.com/11212886/183642234-8606072e-aa24-46ab-81d2-9c2bf8ac42e2.png">
-  
-  
 ## How to install
 
   - First we need to download <a href="https://wordpress.org/download/" target="__blank">wordpress</a>.
@@ -38,9 +25,16 @@ In the home page, ww'll have 4 sections of products:
   - To import the sql data, is good to replace all name related of your database name to other with your preferences.
   - 2 - I'll send the plugin and upload folders with the uploaded images and plugin editor. 
   
+# How to Create a POST with wordpress.
 
+  - Add Name and information about the product. [image 1]
+  - Add image to product. [image 2]
+  
+  <img width="1440" alt="Create post product" src="https://user-images.githubusercontent.com/11212886/183641064-633760f2-6ba2-4f62-a5f7-dc438a202c03.png">
+  
 
-
-Enjoy the project! :D
+[#Note] - To add images SVG, first we need to put in the first line this code: <svg xmlns="http://www.w3.org/2000/svg" id="lotto24" viewBox="0 0 64 64">
+  
+  <img width="1095" alt="Screen Shot 2022-08-09 at 14 02 05" src="https://user-images.githubusercontent.com/11212886/183642234-8606072e-aa24-46ab-81d2-9c2bf8ac42e2.png">
 
 
