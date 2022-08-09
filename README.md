@@ -1,4 +1,4 @@
-[![C# This project is developed with Wordpress + PHP]
+[This project is developed with Wordpress + PHP]
 
 # Introduction 
 
