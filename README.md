@@ -18,7 +18,8 @@ In the home page, ww'll have 4 sections of products:
   - After download, put this folder on htdocs (if you are using XAMPP) or www (if you are using WAMPP).
   - Duplicate wp-config-sample.php, rename to wp-config.php and put the informations about your application.
   - Then you can go to wp-content/themes and past this archive. [*note] To aplly the front-end, you'll have to change the folder name to "lotto".
-  - [Tip 2] Past the folders [uploads] and [plugins] in wp-content/. So the folders composing this tree is [themes], [plugins], [uploads].
+  - The database and other folder is in folders-project.zip in the root of this project.
+  - [Tip 2] Past the folders [uploads] and [plugins] in wp-content/.
 
 ## Tips
   
